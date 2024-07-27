@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe.Com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="buttons">
+        <button id="btn2">Upload</button>
+    </div>
+    <h1>Recipe.Com</h1>
+    <h2>Where Recipe Meets Its Potential.</h2>
+    <div class="section1">
+        <div class="3_b">
+            <button onclick="Dis()"><i class="fa-solid fa-magnifying-glass"></i>Discover</button>
+            <button><i class="fa-solid fa-clock-rotate-left"></i>Recents</button>
+            <button><i class="fa-regular fa-floppy-disk"></i>Saved</button>
+        </div>
+    </div>
+    <h3 id="pre_select"><i class="fa-solid fa-up-long fa-bounce"></i>Select a Type To Continue.</h3>
+    <section id="discover_new">
+        <div class="main">
+            <div class="root">
+                <h4>Discover New - </h4>
+                <hr>
+                <div class="first">
+                    <img src="pizza1.jpeg" alt="">
+                    <div class="gradient">
+                        <h3>Blog By Anupma Sharma</h3>
+                        <h4>Classic Pizza with Vegetable toppings</h4>
+                        <button>Discover</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upload_section">
+        <h3>Upload Your Recipe</h3>
+        <form id="recipe_form">
+            <label for="recipe_name">Recipe Name:</label>
+            <input type="text" id="recipe_name" required>
+            <label for="recipe_description">Description:</label>
+            <textarea id="recipe_description" required></textarea>
+            <label for="recipe_image">Image URL:</label>
+            <input type="text" id="recipe_image" required>
+            <button type="submit">Upload Recipe</button>
+        </form>
+    </section>
+
+    <section id="uploaded_recipes">
+        <h3>Uploaded Recipes</h3>
+        <div id="recipes_container"></div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
